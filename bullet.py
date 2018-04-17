@@ -4,7 +4,6 @@ from pygame.sprite import Sprite
 
 class Bullet(Sprite):
     def __init__(self, ai_settings, screen, ship):
-
         super(Bullet, self).__init__()
         self.screen = screen
 
@@ -13,6 +12,7 @@ class Bullet(Sprite):
 
         self.rect.centerx = ship.rect.centerx
         self.rect.top = ship.rect.top
+        
         #record the location of bullets
         self.y = float(self.rect.y)
         self.color = ai_settings.bullet_color

@@ -7,7 +7,7 @@ class Ship():
         self.screen = screen
         self.ai_settings = ai_settings
         # Load the ship image, and get its rect.
-        self.image = pygame.image.load('F:\\code\\pygame\\images\\ship.bmp')
+        self.image = pygame.image.load('F:\\Github\\Spaceship\\images\\ship.bmp')
         self.rect = self.image.get_rect()
         self.screen_rect = screen.get_rect()
 
@@ -18,7 +18,7 @@ class Ship():
         self.moving_left = False
         self.center = float(self.rect.centerx)
 
-    def biltme(self):
+    def blitme(self):
         self.screen.blit(self.image, self.rect)
 
     def update(self):
